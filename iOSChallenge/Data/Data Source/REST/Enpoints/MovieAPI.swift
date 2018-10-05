@@ -11,6 +11,7 @@ import Moya
 
 enum MovieAPI {
     case movieList()
+    case movieDetailWith(id: Int)
 }
 
 enum Result<T> {
@@ -28,12 +29,16 @@ extension MovieAPI: TargetType {
         switch self {
         case .movieList():
             return "/movies"
+        case .movieDetailWith(let id):
+            return "/movie/\(id)"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .movieList():
+            return .get
+        case .movieDetailWith(let id):
             return .get
         }
     }
