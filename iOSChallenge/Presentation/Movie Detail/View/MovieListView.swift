@@ -16,7 +16,7 @@ protocol MovieListViewProtocol {
     
 }
 
-class MovieListView: UIViewController {
+class MovieListView: UIViewController, StoryboardBased {
     var presenter: MovieListPresenterProtocol!
     var movieList: [Movie]?
 
