@@ -22,8 +22,8 @@ class MovieUseCases {
         controller.getAllMovies(completion: completion)
     }
     
-    func getMovieWith(id: Int) {
-        
+    func getMovieWith(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void) {
+        controller.getMovieDetails(id: id, completion: completion)
     }
     
 }

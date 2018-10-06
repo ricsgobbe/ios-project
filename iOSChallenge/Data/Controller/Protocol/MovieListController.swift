@@ -13,5 +13,6 @@ protocol MovieListController {
     
     func getAllMovies(completion: @escaping ([Movie], Error?) -> Void)
     
+    func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void)
     
 }

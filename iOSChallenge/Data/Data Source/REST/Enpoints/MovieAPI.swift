@@ -30,7 +30,7 @@ extension MovieAPI: TargetType {
         case .movieList():
             return "/movies"
         case .movieDetailWith(let id):
-            return "/movie/\(id)"
+            return "/movies/\(id)"
         }
     }
     

@@ -14,7 +14,7 @@ protocol MovieListPresenterProtocol: class {
     var navigator: MovieListNavigator! {get set}
     
     func getMovieList()
-    func showMovieDetails()
+    func showMovieDetails(id: Int)
 }
 
 class MovieListPresenter: MovieListPresenterProtocol {
@@ -39,8 +39,12 @@ class MovieListPresenter: MovieListPresenterProtocol {
         }
     }
     
-    func showMovieDetails() {
-        navigator.goToMovieDetails()
+    func showMovieDetails(id: Int) {
+        movieUseCases.getMovieWith(id: id) { [weak self] (result, error) in
+            if let movieDetails = result {
+                self?.navigator.goToMovieDetails()
+            }
+        }
     }
     
     

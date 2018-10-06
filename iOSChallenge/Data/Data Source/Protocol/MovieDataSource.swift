@@ -10,4 +10,5 @@ import Foundation
 
 protocol MovieDataSource {
     func fetchMovieList(completion: @escaping ([Movie], Error?) -> Void)
+    func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void)
 }

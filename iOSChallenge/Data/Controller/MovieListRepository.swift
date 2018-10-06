@@ -15,5 +15,9 @@ class MovieListRepository: MovieListController {
         datasource.fetchMovieList(completion: completion)
     }
     
+    func getMovieDetails(id: Int, completion: @escaping(MovieDetail?, Error?) -> Void) {
+        datasource.getMovieDetails(id: id, completion: completion)
+    }
+    
     
 }

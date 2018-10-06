@@ -9,6 +9,11 @@
 import UIKit
 import Reusable
 
+
+protocol MovieDetailTableViewProtocol: class {
+  
+}
+
 class MovieDetailTableView: UITableViewController, StoryboardSceneBased {
     static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "MovieDetailTableView", bundle: nil)
 
@@ -44,3 +49,14 @@ extension MovieDetailTableView {
         return 0
     }
 }
+
+extension MovieDetailTableView {
+    
+    fileprivate func initialSetup() {
+        self.tableView.register(cellType: PosterImageTableViewCell.self)
+        self.tableView.register(cellType: MovieInfoTableViewCell.self)
+    }
+}
+
+
+

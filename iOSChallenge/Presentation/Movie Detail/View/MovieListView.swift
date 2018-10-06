@@ -73,6 +73,11 @@ extension MovieListView: UITableViewDataSource, UITableViewDelegate {
         return MovieListTableViewCell.height
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = movieList![indexPath.row]
+        presenter.showMovieDetails(id: selectedMovie.id)
+    }
+    
 }
 
 
