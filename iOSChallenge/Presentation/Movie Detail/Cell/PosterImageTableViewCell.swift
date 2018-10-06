@@ -14,6 +14,8 @@ class PosterImageTableViewCell: UITableViewCell, NibLoadable, Reusable {
     @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var backdropImage: UIImageView!
     
+    static let height: CGFloat = 193.0
+    
 }
 
 
@@ -34,7 +36,7 @@ extension PosterImageTableViewCell {
 extension PosterImageTableViewCell {
     func render(poster: String, and backdrop: String) {
         let placeholder = UIImage(named: "placeholder")
-        posterImage.loadImageFromURL(stringUrl: poster, placeholder: placeholder!, fadeInDuration: 0.2)
+        posterImage.loadImageFromURL(stringUrl: backdrop, placeholder: placeholder!, fadeInDuration: 0.2)
         backdropImage.loadImageFromURL(stringUrl: backdrop, placeholder: placeholder!, fadeInDuration: 0.2)
     }
     

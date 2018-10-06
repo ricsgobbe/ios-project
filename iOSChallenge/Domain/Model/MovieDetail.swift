@@ -17,6 +17,7 @@ struct MovieDetail {
     let originalTitle: String
     let overview: String
     let posterUrl: String
+    let voteAverage: Float
     
     init(json: JSON) {
         adult = json["adult"].boolValue
@@ -25,5 +26,6 @@ struct MovieDetail {
         originalTitle = json["original_title"].stringValue
         overview = json["overview"].stringValue
         posterUrl = json["poster_url"].stringValue
+        voteAverage = json["vote_average"].floatValue
     }
 }

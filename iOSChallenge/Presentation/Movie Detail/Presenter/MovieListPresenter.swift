@@ -42,7 +42,7 @@ class MovieListPresenter: MovieListPresenterProtocol {
     func showMovieDetails(id: Int) {
         movieUseCases.getMovieWith(id: id) { [weak self] (result, error) in
             if let movieDetails = result {
-                self?.navigator.goToMovieDetails()
+                self?.navigator.goToMovieDetails(movieDetails)
             }
         }
     }

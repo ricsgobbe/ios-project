@@ -43,6 +43,7 @@ extension MovieInfoTableViewCell {
             appendedGenres = genre + ""
         }
         genre.text = appendedGenres
+        releaseDate.text = String(describing: movieDetail.voteAverage)
     }
     
 }

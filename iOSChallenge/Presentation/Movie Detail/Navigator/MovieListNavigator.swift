@@ -16,9 +16,10 @@ class MovieListNavigator {
        self.view = view
     }
     
-    func goToMovieDetails() {
+    func goToMovieDetails(_ details: MovieDetail) {
         if let viewController = view as? UIViewController {
             let movieDetailVC = MovieDetailTableView.instantiate()
+            movieDetailVC.movieDetails = details
             if let navigationController = viewController.navigationController {
                 navigationController.pushViewController(movieDetailVC, animated: true)
             }
