@@ -6,91 +6,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSChallenge/Presentation/Movie Detail/View/MovieDetailTableView.swift"
-            timestampString = "560640737.083802"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieListPresenter.swift"
-            timestampString = "560640737.084259"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "showMovieDetails(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSChallenge.MovieListPresenter.showMovieDetails(id: Swift.Int) -&gt; ()"
-                  moduleName = "iOSChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Presentation/Movie%20Detail/Presenter/MovieListPresenter.swift"
-                  timestampString = "560636027.126011"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "418">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;iOSChallenge.MovieDetail&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in iOSChallenge.MovieListPresenter.showMovieDetails(id: Swift.Int) -&gt; ()"
-                  moduleName = "iOSChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Presentation/Movie%20Detail/Presenter/MovieListPresenter.swift"
-                  timestampString = "560636027.128641"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieListPresenter.swift"
-            timestampString = "560640737.0843329"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "showMovieDetails(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636026.9928221"
+            timestampString = "560644385.372046"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
@@ -106,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636026.9933"
+            timestampString = "560644385.372131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -122,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636026.9937789"
+            timestampString = "560644385.3721991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -137,46 +57,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieListPresenter.swift"
-            timestampString = "560640737.084501"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "showMovieDetails(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieListPresenter.swift"
-            timestampString = "560640737.084568"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "showMovieDetails(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636026.994406"
+            timestampString = "560644385.372267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "updateMovieDetails(movie:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSChallenge.MovieDatabaseDataSource.(updateMovieDetails in _13645FD115DFC9D246473A3995BB0F46)(movie: iOSChallenge.MovieDetail) -&gt; Swift.Bool"
+                  moduleName = "iOSChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Data/Data%20Source/Database/MovieDatabaseDataSource.swift"
+                  timestampString = "560644385.527066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "485">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in iOSChallenge.MovieDatabaseDataSource.(updateMovieDetails in _13645FD115DFC9D246473A3995BB0F46)(movie: iOSChallenge.MovieDetail) -&gt; Swift.Bool"
+                  moduleName = "iOSChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Data/Data%20Source/Database/MovieDatabaseDataSource.swift"
+                  timestampString = "560644385.529705"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -186,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636026.994857"
+            timestampString = "560644385.372328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -202,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636037.444941"
+            timestampString = "560644385.372391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -218,12 +138,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Data/Data Source/Database/MovieDatabaseDataSource.swift"
-            timestampString = "560636038.204559"
+            timestampString = "560644385.372452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
             landmarkName = "updateMovieDetails(movie:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/Commom/LoadingView.swift"
+            timestampString = "560644910.577572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "stopLoading()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieDetailPresenter.swift"
+            timestampString = "560644910.577652"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getMovieDetail(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/Presentation/Movie Detail/Presenter/MovieDetailPresenter.swift"
+            timestampString = "560644910.5777169"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getMovieDetail(id:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -56,21 +56,7 @@ class MovieListPresenter: MovieListPresenterProtocol {
     }
     
     func showMovieDetails(id: Int) {
-        if isConnectedToInternet() {
-            movieUseCases.getMovieWith(id: id) { [weak self] (result, error) in
-                if let movieDetails = result {
-                    self?.databaseUseCase.insertMovieDetails(movieDetail: movieDetails)
-                    self?.navigator.goToMovieDetails(movieDetails)
-                }
-            }
-        } else {
-            databaseUseCase.getMovieDetailInDB(id: id) { [weak self] (result, error) in
-                if let movieDetails = result {
-                    self?.databaseUseCase.insertMovieDetails(movieDetail: movieDetails)
-                    self?.navigator.goToMovieDetails(movieDetails)
-                }
-            }
-        }
+        navigator.goToMovieDetails(id)
         
     }
     

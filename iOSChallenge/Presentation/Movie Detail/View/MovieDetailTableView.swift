@@ -12,11 +12,15 @@ import Reusable
 
 protocol MovieDetailTableViewProtocol: class, LoadingView {
     var movieDetails: MovieDetail! {get set}
+    var presenter: MovieDetailPresenterProtocol! {get set}
+    
+    func displayDetails(detail: MovieDetail)
 }
 
 class MovieDetailTableView: UITableViewController, StoryboardSceneBased {
     static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "MovieDetailTableView", bundle: nil)
     
+    var presenter: MovieDetailPresenterProtocol!
     var loadingView: UIView!
     var movieDetails: MovieDetail!
 }
@@ -25,8 +29,6 @@ extension MovieDetailTableView {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
-        loadViewSetup()
-        self.startLoading()
         
     }
     
@@ -62,7 +64,10 @@ extension MovieDetailTableView {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        if (movieDetails) != nil {
+            return 1
+        }
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,10 +76,22 @@ extension MovieDetailTableView {
 }
 
 extension MovieDetailTableView: MovieDetailTableViewProtocol {
+    func displayDetails(detail: MovieDetail) {
+        self.movieDetails = detail
+        self.tableView.reloadData()
+    }
+    
     
 }
 
 extension MovieDetailTableView {
+    
+    func getMovieDetail(id: Int) {
+        loadViewSetup()
+        self.startLoading()
+        presenter = MovieDetailPresenter(view: self)
+        presenter.getMovieDetail(id: id)
+    }
     
     fileprivate func initialSetup() {
         self.tableView.register(cellType: PosterImageTableViewCell.self)
