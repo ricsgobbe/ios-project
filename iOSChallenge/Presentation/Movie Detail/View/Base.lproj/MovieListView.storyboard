@@ -22,18 +22,27 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqe-Zu-qmN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="go9-la-07r" firstAttribute="bottom" secondItem="mG3-0K-ESw" secondAttribute="bottom" id="56R-qX-8Kk"/>
+                            <constraint firstItem="Eqe-Zu-qmN" firstAttribute="top" secondItem="go9-la-07r" secondAttribute="top" id="Svk-Ia-hZU"/>
+                            <constraint firstItem="Eqe-Zu-qmN" firstAttribute="leading" secondItem="go9-la-07r" secondAttribute="leading" id="Wzf-4J-EUJ"/>
+                            <constraint firstItem="go9-la-07r" firstAttribute="bottom" secondItem="Eqe-Zu-qmN" secondAttribute="bottom" id="afG-Gz-WDO"/>
                             <constraint firstItem="mG3-0K-ESw" firstAttribute="leading" secondItem="go9-la-07r" secondAttribute="leading" id="kNH-A3-42o"/>
                             <constraint firstItem="mG3-0K-ESw" firstAttribute="top" secondItem="go9-la-07r" secondAttribute="top" id="otR-Im-EA0"/>
+                            <constraint firstItem="go9-la-07r" firstAttribute="trailing" secondItem="Eqe-Zu-qmN" secondAttribute="trailing" id="sA0-cC-Hqj"/>
                             <constraint firstItem="go9-la-07r" firstAttribute="trailing" secondItem="mG3-0K-ESw" secondAttribute="trailing" id="yqn-TO-YUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="go9-la-07r"/>
                     </view>
                     <navigationItem key="navigationItem" id="gpg-gs-gOe"/>
                     <connections>
+                        <outlet property="loadingView" destination="Eqe-Zu-qmN" id="Neg-UE-27u"/>
                         <outlet property="movieDetailTableView" destination="mG3-0K-ESw" id="1mq-hM-hVk"/>
                     </connections>
                 </viewController>

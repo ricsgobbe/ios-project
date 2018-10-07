@@ -10,13 +10,14 @@ import UIKit
 import Reusable
 
 
-protocol MovieDetailTableViewProtocol: class {
+protocol MovieDetailTableViewProtocol: class, LoadingView {
     var movieDetails: MovieDetail! {get set}
 }
 
 class MovieDetailTableView: UITableViewController, StoryboardSceneBased {
     static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "MovieDetailTableView", bundle: nil)
     
+    var loadingView: UIView!
     var movieDetails: MovieDetail!
 }
 
@@ -24,6 +25,9 @@ extension MovieDetailTableView {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+        loadViewSetup()
+        self.startLoading()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,6 +79,21 @@ extension MovieDetailTableView {
     fileprivate func initialSetup() {
         self.tableView.register(cellType: PosterImageTableViewCell.self)
         self.tableView.register(cellType: MovieInfoTableViewCell.self)
+    }
+    
+    fileprivate func loadViewSetup() {
+        loadingView = UIView()
+        loadingView.frame = .zero
+        view.addSubview(loadingView)
+        view.bringSubview(toFront: loadingView)
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        let width = self.tableView.frame.width
+        let height = self.tableView.frame.height
+        let horizontalConstraint = loadingView.centerXAnchor.constraint(equalTo: self.tableView.centerXAnchor)
+        let verticalConstraint = loadingView.centerYAnchor.constraint(equalTo: self.tableView.centerYAnchor)
+        let widthConstraint = loadingView.widthAnchor.constraint(equalToConstant: width)
+        let heightConstraint = loadingView.heightAnchor.constraint(equalToConstant: height)
+        view.addConstraints([widthConstraint, heightConstraint, horizontalConstraint, verticalConstraint])
     }
 }
 

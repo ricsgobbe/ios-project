@@ -20,9 +20,7 @@ protocol MovieListPresenterProtocol: class {
 
 class MovieListPresenter: MovieListPresenterProtocol {
     var databaseUseCase: MovieDatabaseUseCase!
-    
     var navigator: MovieListNavigator!
-    
     var movieUseCases: MovieUseCases!
     var view: MovieListViewProtocol!
     
@@ -35,17 +33,21 @@ class MovieListPresenter: MovieListPresenterProtocol {
     }
     
     func getMovieList() {
+        view.startLoading()
         if isConnectedToInternet() {
             movieUseCases.fetchMovieList { [weak self] (response, error) in
                 guard let movies: [Movie] = response else {
+                    self?.view.showError(message: "Something unexpected happened.")
                     return
                 }
                 self?.databaseUseCase.insertMovie(movie: movies)
+                self?.view.stopLoading()
                 self?.view.showMovieList(movies: movies)
             }
         } else {
             databaseUseCase.fetchMovie { [weak self] (movies, error) in
                 if error == nil {
+                    self?.view.stopLoading()
                     self?.view.showMovieList(movies: movies)
                 }
             }

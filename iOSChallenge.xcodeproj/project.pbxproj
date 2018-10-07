@@ -42,6 +42,7 @@
 		04F15969216A756B004F9737 /* MovieListDatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15968216A756B004F9737 /* MovieListDatabaseRepository.swift */; };
 		04F1596B216A76E1004F9737 /* MovieDatabaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596A216A76E1004F9737 /* MovieDatabaseUseCase.swift */; };
 		04F1596E216A90E8004F9737 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596D216A90E8004F9737 /* NetworkManager.swift */; };
+		04F15970216AA687004F9737 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596F216AA687004F9737 /* LoadingView.swift */; };
 		528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */; };
 		75D21DBE0FD856E4A6344231 /* Pods_iOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */; };
 		8D0F54AD77D954DDD5BEBE4B /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */; };
@@ -106,6 +107,7 @@
 		04F15968216A756B004F9737 /* MovieListDatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDatabaseRepository.swift; sourceTree = "<group>"; };
 		04F1596A216A76E1004F9737 /* MovieDatabaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabaseUseCase.swift; sourceTree = "<group>"; };
 		04F1596D216A90E8004F9737 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04F1596F216AA687004F9737 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C4CAB3DFD02A45F87267 /* Pods-iOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0827DFD77A1B86BE1C3F2B /* Pods-iOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				04F1596D216A90E8004F9737 /* NetworkManager.swift */,
+				04F1596F216AA687004F9737 /* LoadingView.swift */,
 			);
 			path = Commom;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				042B37982165B09900045DE3 /* MovieListView.swift in Sources */,
 				04F1595821684C58004F9737 /* MovieDetailTableView.swift in Sources */,
 				04F15969216A756B004F9737 /* MovieListDatabaseRepository.swift in Sources */,
+				04F15970216AA687004F9737 /* LoadingView.swift in Sources */,
 				042B37DB2165BE9400045DE3 /* Nuke+UIImage.swift in Sources */,
 				042B37EB2166F34F00045DE3 /* MovieUseCases.swift in Sources */,
 				04F15961216856B1004F9737 /* PosterImageTableViewCell.swift in Sources */,

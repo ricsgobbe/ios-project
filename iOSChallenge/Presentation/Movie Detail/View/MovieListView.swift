@@ -9,9 +9,9 @@
 import UIKit
 import Reusable
 
-protocol MovieListViewProtocol {
+protocol MovieListViewProtocol: LoadingView {
     var presenter: MovieListPresenterProtocol! {get set}
-    
+
     func showMovieList(movies: [Movie])
     
 }
@@ -21,7 +21,7 @@ class MovieListView: UIViewController, StoryboardBased {
     var movieList: [Movie]?
 
     @IBOutlet weak var movieDetailTableView: UITableView!
-    
+    @IBOutlet weak var loadingView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
