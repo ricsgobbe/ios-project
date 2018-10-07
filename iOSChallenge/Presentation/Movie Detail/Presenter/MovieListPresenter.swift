@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ricardo Sgobbe. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol MovieListPresenterProtocol: class {
     var view: MovieListViewProtocol! {get set}
@@ -36,20 +36,11 @@ class MovieListPresenter: MovieListPresenterProtocol {
         view.startLoading()
         if isConnectedToInternet() {
             movieUseCases.fetchMovieList { [weak self] (response, error) in
-                guard let movies: [Movie] = response else {
-                    self?.view.showError(message: "Something unexpected happened.")
-                    return
-                }
-                self?.databaseUseCase.insertMovie(movie: movies)
-                self?.view.stopLoading()
-                self?.view.showMovieList(movies: movies)
+                self?.displayingValues(movies: response, error: error)
             }
         } else {
             databaseUseCase.fetchMovie { [weak self] (movies, error) in
-                if error == nil {
-                    self?.view.stopLoading()
-                    self?.view.showMovieList(movies: movies)
-                }
+                self?.displayingValues(movies: movies, error: error)
             }
         }
         
@@ -60,8 +51,22 @@ class MovieListPresenter: MovieListPresenterProtocol {
         
     }
     
+    fileprivate func displayingValues(movies: [Movie], error: Error?) {
+        if error != nil {
+            self.view.showMsg(message: .error)
+            self.view.showError(message: "Tap on the screen to reload.")
+        } else {
+            if movies.isEmpty {
+                self.view.showError(message: "No item was found.")
+            } else {
+                self.view.stopLoading()
+                self.view.showMovieList(movies: movies)
+            }
+        }
+    }
+    
     fileprivate func isConnectedToInternet() -> Bool {
-        return NetworkManager.isConnectedToInternet()
+        return NetworkManager.isConnectedToInternet(controller: view as! UIViewController)
     }
     
 }

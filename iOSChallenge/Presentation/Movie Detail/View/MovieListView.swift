@@ -13,7 +13,7 @@ protocol MovieListViewProtocol: LoadingView {
     var presenter: MovieListPresenterProtocol! {get set}
 
     func showMovieList(movies: [Movie])
-    
+    func showMsg(message: AlertTypes)
 }
 
 class MovieListView: UIViewController, StoryboardBased {
@@ -82,6 +82,10 @@ extension MovieListView: UITableViewDataSource, UITableViewDelegate {
 
 
 extension MovieListView: MovieListViewProtocol {
+    func showMsg(message: AlertTypes) {
+        AlertManager.createOneButtonAlert(controller: self, type: message)
+    }
+    
     func showMovieList(movies: [Movie]) {
         self.movieList = movies
         self.movieDetailTableView.reloadData()

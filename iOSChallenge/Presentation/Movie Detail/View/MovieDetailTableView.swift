@@ -15,6 +15,7 @@ protocol MovieDetailTableViewProtocol: class, LoadingView {
     var presenter: MovieDetailPresenterProtocol! {get set}
     
     func displayDetails(detail: MovieDetail)
+    func showMsg(message: AlertTypes)
 }
 
 class MovieDetailTableView: UITableViewController, StoryboardSceneBased {
@@ -50,7 +51,10 @@ extension MovieDetailTableView {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return PosterImageTableViewCell.height
+        if (movieDetails) != nil {
+            return PosterImageTableViewCell.height
+        }
+        return 0.0
     }
     
     
@@ -64,10 +68,7 @@ extension MovieDetailTableView {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        if (movieDetails) != nil {
-            return 1
-        }
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,6 +77,10 @@ extension MovieDetailTableView {
 }
 
 extension MovieDetailTableView: MovieDetailTableViewProtocol {
+    func showMsg(message: AlertTypes) {
+        AlertManager.createOneButtonAlert(controller: self, type: message)
+    }
+    
     func displayDetails(detail: MovieDetail) {
         self.movieDetails = detail
         self.tableView.reloadData()

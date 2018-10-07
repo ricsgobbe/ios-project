@@ -77,6 +77,8 @@ class MovieDatabaseDataSource: MovieDatabaseDataSourceProtocol {
         let movieDetail = realm.objects(MovieDetail.self).filter("id == %@", id)
         if let detail = movieDetail.first {
             completion(detail, nil)
+        } else {
+            completion(nil, nil)
         }
     }
     
