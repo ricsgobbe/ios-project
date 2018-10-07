@@ -16,3 +16,13 @@ protocol MovieListController {
     func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void)
     
 }
+
+protocol MovieListDatabaseController {
+    var datasource: MovieDatabaseDataSourceProtocol! {get set}
+    
+    func getAllMovies(completion: @escaping ([Movie], Error?) -> Void)
+    func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void)
+    func insertMovie(movie: [Movie])
+    func insertMovieDetail(movieDetail: MovieDetail)
+    func update(id: String)
+}

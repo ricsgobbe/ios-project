@@ -12,6 +12,7 @@ target 'iOSChallenge' do
   pod 'Moya'
   pod 'Reusable'
   pod 'Nuke'
+  pod 'RealmSwift'
 
   target 'iOSChallengeTests' do
     inherit! :search_paths

@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+class MovieDatabaseUseCase {
+    var controller: MovieListDatabaseController!
+    
+    init() {
+        controller = MovieListDatabaseRepository()
+        controller.datasource = MovieDatabaseDataSource()
+    }
+    
+    func insertMovie(movie: [Movie]) {
+        controller.insertMovie(movie: movie)
+    }
+    func fetchMovie(completion: @escaping ([Movie], Error?) -> Void) {
+        controller.getAllMovies(completion: completion)
+    }
+    
+    func insertMovieDetails(movieDetail: MovieDetail) {
+        controller.insertMovieDetail(movieDetail: movieDetail)
+    }
+    
+}

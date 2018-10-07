@@ -38,6 +38,10 @@
 		04F15961216856B1004F9737 /* PosterImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1595F216856B1004F9737 /* PosterImageTableViewCell.swift */; };
 		04F15962216856B1004F9737 /* PosterImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F15960216856B1004F9737 /* PosterImageTableViewCell.xib */; };
 		04F1596421685A90004F9737 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596321685A90004F9737 /* MovieDetailPresenter.swift */; };
+		04F15967216A6F37004F9737 /* MovieDatabaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15966216A6F37004F9737 /* MovieDatabaseDataSource.swift */; };
+		04F15969216A756B004F9737 /* MovieListDatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15968216A756B004F9737 /* MovieListDatabaseRepository.swift */; };
+		04F1596B216A76E1004F9737 /* MovieDatabaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596A216A76E1004F9737 /* MovieDatabaseUseCase.swift */; };
+		04F1596E216A90E8004F9737 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596D216A90E8004F9737 /* NetworkManager.swift */; };
 		528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */; };
 		75D21DBE0FD856E4A6344231 /* Pods_iOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */; };
 		8D0F54AD77D954DDD5BEBE4B /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */; };
@@ -98,6 +102,10 @@
 		04F1595F216856B1004F9737 /* PosterImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageTableViewCell.swift; sourceTree = "<group>"; };
 		04F15960216856B1004F9737 /* PosterImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterImageTableViewCell.xib; sourceTree = "<group>"; };
 		04F1596321685A90004F9737 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		04F15966216A6F37004F9737 /* MovieDatabaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabaseDataSource.swift; sourceTree = "<group>"; };
+		04F15968216A756B004F9737 /* MovieListDatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDatabaseRepository.swift; sourceTree = "<group>"; };
+		04F1596A216A76E1004F9737 /* MovieDatabaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabaseUseCase.swift; sourceTree = "<group>"; };
+		04F1596D216A90E8004F9737 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C4CAB3DFD02A45F87267 /* Pods-iOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0827DFD77A1B86BE1C3F2B /* Pods-iOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +170,7 @@
 		042B37942165B09900045DE3 /* iOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				04F1596C216A90CF004F9737 /* Commom */,
 				042B37EC2166F41900045DE3 /* Presentation */,
 				042B37D32165BE4E00045DE3 /* Extension */,
 				042B37CB2165BBA600045DE3 /* Data */,
@@ -213,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				042B37EA2166F34F00045DE3 /* MovieUseCases.swift */,
+				04F1596A216A76E1004F9737 /* MovieDatabaseUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -238,6 +248,7 @@
 		042B37CC2165BC0700045DE3 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
+				04F15965216A6A91004F9737 /* Database */,
 				042B37D02165BCDE00045DE3 /* Protocol */,
 				042B37CD2165BC2700045DE3 /* REST */,
 			);
@@ -286,6 +297,7 @@
 			children = (
 				042B37E52166F0EC00045DE3 /* Protocol */,
 				042B37E82166F1E500045DE3 /* MovieListRepository.swift */,
+				04F15968216A756B004F9737 /* MovieListDatabaseRepository.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +368,22 @@
 				04F1595521684ACD004F9737 /* MovieListNavigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		04F15965216A6A91004F9737 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				04F15966216A6F37004F9737 /* MovieDatabaseDataSource.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		04F1596C216A90CF004F9737 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				04F1596D216A90E8004F9737 /* NetworkManager.swift */,
+			);
+			path = Commom;
 			sourceTree = "<group>";
 		};
 		4FF6D938D11C294BF9163B8B /* Pods */ = {
@@ -544,6 +572,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -553,6 +583,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -609,15 +641,19 @@
 				042B37CF2165BC3F00045DE3 /* MovieDataSource.swift in Sources */,
 				04F1595621684ACD004F9737 /* MovieListNavigator.swift in Sources */,
 				042B37D22165BD5800045DE3 /* MovieRestDataSource.swift in Sources */,
+				04F15967216A6F37004F9737 /* MovieDatabaseDataSource.swift in Sources */,
 				042B37982165B09900045DE3 /* MovieListView.swift in Sources */,
 				04F1595821684C58004F9737 /* MovieDetailTableView.swift in Sources */,
+				04F15969216A756B004F9737 /* MovieListDatabaseRepository.swift in Sources */,
 				042B37DB2165BE9400045DE3 /* Nuke+UIImage.swift in Sources */,
 				042B37EB2166F34F00045DE3 /* MovieUseCases.swift in Sources */,
 				04F15961216856B1004F9737 /* PosterImageTableViewCell.swift in Sources */,
 				042B37DA2165BE9400045DE3 /* StringExtension.swift in Sources */,
 				042B37F7216706E500045DE3 /* MovieListTableViewCell.swift in Sources */,
+				04F1596B216A76E1004F9737 /* MovieDatabaseUseCase.swift in Sources */,
 				04F1595D21685692004F9737 /* MovieInfoTableViewCell.swift in Sources */,
 				042B37EE2166F43100045DE3 /* MovieListPresenter.swift in Sources */,
+				04F1596E216A90E8004F9737 /* NetworkManager.swift in Sources */,
 				042B37E92166F1E500045DE3 /* MovieListRepository.swift in Sources */,
 				042B37962165B09900045DE3 /* AppDelegate.swift in Sources */,
 				042B37DD2165BE9400045DE3 /* Moya.swift in Sources */,

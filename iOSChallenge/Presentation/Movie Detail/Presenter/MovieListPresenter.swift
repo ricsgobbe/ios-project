@@ -11,6 +11,7 @@ import Foundation
 protocol MovieListPresenterProtocol: class {
     var view: MovieListViewProtocol! {get set}
     var movieUseCases: MovieUseCases! {get set}
+    var databaseUseCase: MovieDatabaseUseCase! {get set}
     var navigator: MovieListNavigator! {get set}
     
     func getMovieList()
@@ -18,6 +19,8 @@ protocol MovieListPresenterProtocol: class {
 }
 
 class MovieListPresenter: MovieListPresenterProtocol {
+    var databaseUseCase: MovieDatabaseUseCase!
+    
     var navigator: MovieListNavigator!
     
     var movieUseCases: MovieUseCases!
@@ -26,26 +29,46 @@ class MovieListPresenter: MovieListPresenterProtocol {
     
     init(view: MovieListView) {
         movieUseCases = MovieUseCases()
+        databaseUseCase = MovieDatabaseUseCase()
         navigator = MovieListNavigator(view)
         self.view = view
     }
     
     func getMovieList() {
-        movieUseCases.fetchMovieList { [weak self] (response, error) in
-            guard let movies: [Movie] = response else {
-                return
+        if isConnectedToInternet() {
+            movieUseCases.fetchMovieList { [weak self] (response, error) in
+                guard let movies: [Movie] = response else {
+                    return
+                }
+                self?.databaseUseCase.insertMovie(movie: movies)
+                self?.view.showMovieList(movies: movies)
             }
-            self?.view.showMovieList(movies: movies)
+        } else {
+            databaseUseCase.fetchMovie { [weak self] (movies, error) in
+                if error == nil {
+                    self?.view.showMovieList(movies: movies)
+                }
+            }
         }
+        
     }
     
     func showMovieDetails(id: Int) {
-        movieUseCases.getMovieWith(id: id) { [weak self] (result, error) in
-            if let movieDetails = result {
-                self?.navigator.goToMovieDetails(movieDetails)
+        if isConnectedToInternet() {
+            movieUseCases.getMovieWith(id: id) { [weak self] (result, error) in
+                if let movieDetails = result {
+                    self?.databaseUseCase.insertMovieDetails(movieDetail: movieDetails)
+                    self?.navigator.goToMovieDetails(movieDetails)
+                }
             }
+        } else {
+            
         }
+        
     }
     
+    fileprivate func isConnectedToInternet() -> Bool {
+        return NetworkManager.isConnectedToInternet()
+    }
     
 }

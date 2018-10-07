@@ -12,3 +12,12 @@ protocol MovieDataSource {
     func fetchMovieList(completion: @escaping ([Movie], Error?) -> Void)
     func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void)
 }
+
+protocol MovieDatabaseDataSourceProtocol: MovieDataSource {
+    
+    func insertMovie(movie: [Movie])
+    func insertMovieDetail(movieDetail: MovieDetail)
+    func update(id: String)
+    
+}
+

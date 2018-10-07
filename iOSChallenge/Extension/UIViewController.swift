@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
+import Alamofire
 
 extension UIViewController {
     
     func changeBackgroundColor(color: UIColor) {
         self.view.backgroundColor = color
     }
-    
 }
