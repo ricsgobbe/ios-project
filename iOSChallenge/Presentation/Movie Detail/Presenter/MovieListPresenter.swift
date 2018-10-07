@@ -62,7 +62,12 @@ class MovieListPresenter: MovieListPresenterProtocol {
                 }
             }
         } else {
-            
+            databaseUseCase.getMovieDetailInDB(id: id) { [weak self] (result, error) in
+                if let movieDetails = result {
+                    self?.databaseUseCase.insertMovieDetails(movieDetail: movieDetails)
+                    self?.navigator.goToMovieDetails(movieDetails)
+                }
+            }
         }
         
     }

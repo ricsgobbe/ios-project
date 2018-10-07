@@ -27,4 +27,8 @@ class MovieDatabaseUseCase {
         controller.insertMovieDetail(movieDetail: movieDetail)
     }
     
+    func getMovieDetailInDB(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void) {
+        controller.getMovieDetails(id: id, completion: completion)
+    }
+    
 }

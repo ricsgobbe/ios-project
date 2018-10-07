@@ -39,22 +39,20 @@ class MovieDatabaseDataSource: MovieDatabaseDataSourceProtocol {
     
     fileprivate func updateMovie(movie: Movie) -> Bool {
         let realm = try! Realm()
-        if let movieToUpdate: Results<Movie> = realm.objects(Movie.self).filter("id == %@", movie.id) {
-            var movieFound = movieToUpdate.first
+        let movieToUpdate: Results<Movie> = realm.objects(Movie.self).filter("id == %@", movie.id)
+        if var movieFound = movieToUpdate.first {
             try! realm.write {
-               movieFound = movie
+                movieFound = movie
             }
             return true
-        } else {
-            return false
         }
-        
+        return false
     }
     
     fileprivate func updateMovieDetails(movie: MovieDetail) -> Bool {
         let realm = try! Realm()
-        if let movieToUpdate: Results<MovieDetail> = realm.objects(MovieDetail.self).filter("id == %@", movie.id) {
-            var movieFound = movieToUpdate.first
+        let movieToUpdate: Results<MovieDetail> = realm.objects(MovieDetail.self).filter("id == %@", movie.id)
+        if var movieFound = movieToUpdate.first {
             try! realm.write {
                 movieFound = movie
             }
@@ -75,7 +73,11 @@ class MovieDatabaseDataSource: MovieDatabaseDataSourceProtocol {
     }
     
     func getMovieDetails(id: Int, completion: @escaping (MovieDetail?, Error?) -> Void) {
-        
+        let realm = try! Realm()
+        let movieDetail = realm.objects(MovieDetail.self).filter("id == %@", id)
+        if let detail = movieDetail.first {
+            completion(detail, nil)
+        }
     }
     
     
