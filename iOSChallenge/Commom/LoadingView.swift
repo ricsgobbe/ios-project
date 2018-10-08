@@ -36,7 +36,7 @@ extension LoadingView where Self: UIViewController {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.frame = .zero
         activityIndicator.activityIndicatorViewStyle = .white
-        activityIndicator.color = UIColor.red
+        activityIndicator.color = ColorPalette.mainColor
         activityIndicator.startAnimating()
         view.addSubview(activityIndicator)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false

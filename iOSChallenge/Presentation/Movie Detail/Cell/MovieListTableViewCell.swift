@@ -21,7 +21,6 @@ class MovieListTableViewCell: UITableViewCell, NibLoadable, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -41,6 +40,5 @@ class MovieListTableViewCell: UITableViewCell, NibLoadable, Reusable {
         })
         genres.text = appendedGenres
     }
-    
-    
+
 }

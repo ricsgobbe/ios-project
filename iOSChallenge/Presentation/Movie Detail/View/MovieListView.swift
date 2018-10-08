@@ -109,7 +109,7 @@ extension MovieListView: MovieListViewProtocol {
     
     fileprivate func pullToRefreshSetup() {
         refreshControl = UIRefreshControl()
-        refreshControl.tintColor = UIColor.red
+        refreshControl.tintColor = ColorPalette.mainColor
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         movieDetailTableView.addSubview(refreshControl)
     }
@@ -122,6 +122,14 @@ extension MovieListView: MovieListViewProtocol {
     
     @objc func refresh(_ sender: Any) {
         presenter.getMovieList()
+    }
+    
+    
+}
+
+extension MovieListView: CustomNavigationControllerStylable {
+    var customNavigationControllerStyle: CustomNavigationControllerStyle? {
+        return MyTaxiCustomNavigationControllerStyle()
     }
     
     

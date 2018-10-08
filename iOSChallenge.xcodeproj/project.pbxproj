@@ -44,6 +44,8 @@
 		04F1596E216A90E8004F9737 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596D216A90E8004F9737 /* NetworkManager.swift */; };
 		04F15970216AA687004F9737 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1596F216AA687004F9737 /* LoadingView.swift */; };
 		04F15972216AC402004F9737 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15971216AC402004F9737 /* AlertManager.swift */; };
+		04F15974216AD978004F9737 /* MovieCustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15973216AD978004F9737 /* MovieCustomColors.swift */; };
+		04F15978216AF1EA004F9737 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */; };
 		528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */; };
 		75D21DBE0FD856E4A6344231 /* Pods_iOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */; };
 		8D0F54AD77D954DDD5BEBE4B /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */; };
@@ -110,6 +112,8 @@
 		04F1596D216A90E8004F9737 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		04F1596F216AA687004F9737 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		04F15971216AC402004F9737 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		04F15973216AD978004F9737 /* MovieCustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomColors.swift; sourceTree = "<group>"; };
+		04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C4CAB3DFD02A45F87267 /* Pods-iOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0827DFD77A1B86BE1C3F2B /* Pods-iOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -388,6 +392,8 @@
 				04F1596D216A90E8004F9737 /* NetworkManager.swift */,
 				04F1596F216AA687004F9737 /* LoadingView.swift */,
 				04F15971216AC402004F9737 /* AlertManager.swift */,
+				04F15973216AD978004F9737 /* MovieCustomColors.swift */,
+				04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */,
 			);
 			path = Commom;
 			sourceTree = "<group>";
@@ -665,7 +671,9 @@
 				042B37E92166F1E500045DE3 /* MovieListRepository.swift in Sources */,
 				042B37962165B09900045DE3 /* AppDelegate.swift in Sources */,
 				042B37DD2165BE9400045DE3 /* Moya.swift in Sources */,
+				04F15974216AD978004F9737 /* MovieCustomColors.swift in Sources */,
 				042B37DC2165BE9400045DE3 /* MoyaServices.swift in Sources */,
+				04F15978216AF1EA004F9737 /* CustomNavigationBar.swift in Sources */,
 				042B37C82165B67700045DE3 /* Movie.swift in Sources */,
 				04F1596421685A90004F9737 /* MovieDetailPresenter.swift in Sources */,
 				042B37E02165C2A800045DE3 /* MovieAPI.swift in Sources */,
