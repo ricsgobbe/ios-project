@@ -19,13 +19,18 @@ protocol MovieListViewProtocol: LoadingView {
 class MovieListView: UIViewController, StoryboardBased {
     var presenter: MovieListPresenterProtocol!
     var movieList: [Movie]?
+    
+    var refreshControl: UIRefreshControl!
 
     @IBOutlet weak var movieDetailTableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     
+    var tapGesture: UITapGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+        pullToRefreshSetup()
         // Do any additiona l setup after loading the view, typically from a nib.
     }
     
@@ -43,6 +48,9 @@ extension MovieListView {
         tableViewSetup()
         presenter = MovieListPresenter(view: self)
         presenter.getMovieList()
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        loadingView.addGestureRecognizer(tapGesture)
+        loadingView.isUserInteractionEnabled = true
     }
     
     fileprivate func tableViewSetup() {
@@ -82,13 +90,38 @@ extension MovieListView: UITableViewDataSource, UITableViewDelegate {
 
 
 extension MovieListView: MovieListViewProtocol {
+    
+    @objc func handleTap(sender: UITapGestureRecognizer?) {
+        self.movieList?.removeAll()
+        presenter.getMovieList()
+    }
+    
     func showMsg(message: AlertTypes) {
         AlertManager.createOneButtonAlert(controller: self, type: message)
+        endSwipePull()
     }
     
     func showMovieList(movies: [Movie]) {
+        endSwipePull()
         self.movieList = movies
         self.movieDetailTableView.reloadData()
+    }
+    
+    fileprivate func pullToRefreshSetup() {
+        refreshControl = UIRefreshControl()
+        refreshControl.tintColor = UIColor.red
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        movieDetailTableView.addSubview(refreshControl)
+    }
+    
+    fileprivate func endSwipePull(){
+        if refreshControl != nil {
+             self.refreshControl.endRefreshing()
+        }
+    }
+    
+    @objc func refresh(_ sender: Any) {
+        presenter.getMovieList()
     }
     
     

@@ -10,10 +10,12 @@ import UIKit
 
 protocol LoadingView {
     var loadingView: UIView! {get}
+    var tapGesture: UITapGestureRecognizer! {get set}
     
     func startLoading()
     func stopLoading()
     func showError(message: String)
+    func handleTap(sender: UITapGestureRecognizer?)
 }
 
 extension LoadingView where Self: UIViewController {

@@ -24,6 +24,7 @@ class MovieDetailTableView: UITableViewController, StoryboardSceneBased {
     var presenter: MovieDetailPresenterProtocol!
     var loadingView: UIView!
     var movieDetails: MovieDetail!
+    var tapGesture: UITapGestureRecognizer!
 }
 
 extension MovieDetailTableView {
@@ -77,6 +78,11 @@ extension MovieDetailTableView {
 }
 
 extension MovieDetailTableView: MovieDetailTableViewProtocol {
+    
+    @objc func handleTap(sender: UITapGestureRecognizer?) {
+        
+    }
+    
     func showMsg(message: AlertTypes) {
         AlertManager.createOneButtonAlert(controller: self, type: message)
     }
