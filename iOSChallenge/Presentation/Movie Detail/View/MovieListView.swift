@@ -129,7 +129,7 @@ extension MovieListView: MovieListViewProtocol {
 
 extension MovieListView: CustomNavigationControllerStylable {
     var customNavigationControllerStyle: CustomNavigationControllerStyle? {
-        return MyTaxiCustomNavigationControllerStyle()
+        return CustomNavigationController()
     }
     
     

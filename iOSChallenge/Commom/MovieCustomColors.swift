@@ -28,7 +28,7 @@ protocol CustomNavigationControllerStyle {
     var shouldAnimateStyleChanges: Bool {get}
 }
 
-struct MyTaxiCustomNavigationControllerStyle: CustomNavigationControllerStyle {
+struct CustomNavigationController: CustomNavigationControllerStyle {
     var isBarHidden: Bool = false
     var statusBarStyle: UIStatusBarStyle = .lightContent
     var barTintColor: UIColor? = ColorPalette.mainColor
