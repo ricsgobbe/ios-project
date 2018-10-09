@@ -14,14 +14,17 @@ target 'iOSChallenge' do
   pod 'Nuke'
   pod 'RealmSwift'
 
-  target 'iOSChallengeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
-  target 'iOSChallengeUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
+
+target 'iOSChallengeTests' do
+    use_frameworks!
+    pod 'Nimble'
+    pod 'Quick'
+end
+
+target 'iOSChallengeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    end

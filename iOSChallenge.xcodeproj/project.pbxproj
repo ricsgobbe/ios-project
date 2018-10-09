@@ -30,6 +30,8 @@
 		042B37EE2166F43100045DE3 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37ED2166F43100045DE3 /* MovieListPresenter.swift */; };
 		042B37F7216706E500045DE3 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37F5216706E500045DE3 /* MovieListTableViewCell.swift */; };
 		042B37F8216706E500045DE3 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042B37F6216706E500045DE3 /* MovieListTableViewCell.xib */; };
+		04865F57216C448D00F11E44 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */; };
+		04865F59216C449300F11E44 /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */; };
 		04F1595621684ACD004F9737 /* MovieListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1595521684ACD004F9737 /* MovieListNavigator.swift */; };
 		04F1595821684C58004F9737 /* MovieDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1595721684C58004F9737 /* MovieDetailTableView.swift */; };
 		04F1595A21684C6C004F9737 /* MovieDetailTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1595921684C6C004F9737 /* MovieDetailTableView.storyboard */; };
@@ -47,8 +49,7 @@
 		04F15974216AD978004F9737 /* MovieCustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15973216AD978004F9737 /* MovieCustomColors.swift */; };
 		04F15978216AF1EA004F9737 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */; };
 		528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */; };
-		75D21DBE0FD856E4A6344231 /* Pods_iOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */; };
-		8D0F54AD77D954DDD5BEBE4B /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */; };
+		909593ADDD74AFA87E622D59 /* libPods-iOSChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF63EDFFF0C3EDB77359FA8 /* libPods-iOSChallengeUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,9 @@
 		042B37ED2166F43100045DE3 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		042B37F5216706E500045DE3 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		042B37F6216706E500045DE3 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
+		04865F54216C444C00F11E44 /* Pods_iOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F1595521684ACD004F9737 /* MovieListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListNavigator.swift; sourceTree = "<group>"; };
 		04F1595721684C58004F9737 /* MovieDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailTableView.swift; sourceTree = "<group>"; };
 		04F1595921684C6C004F9737 /* MovieDetailTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetailTableView.storyboard; sourceTree = "<group>"; };
@@ -116,13 +120,16 @@
 		04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C4CAB3DFD02A45F87267 /* Pods-iOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		707E90A587F8CF684923680D /* Pods_iOSChallenge_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallenge_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831C441FC9B33734FFC711C3 /* Pods-iOSChallenge-iOSChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge-iOSChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge-iOSChallengeTests/Pods-iOSChallenge-iOSChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A0827DFD77A1B86BE1C3F2B /* Pods-iOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		9AEA990BCB3D6F622F7B2157 /* Pods-iOSChallenge-iOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge-iOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge-iOSChallengeTests/Pods-iOSChallenge-iOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EF4079A87F0B65436F1C6B3 /* Pods-iOSChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeUITests/Pods-iOSChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A207E9C2220A9DF191B27DA4 /* Pods-iOSChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeUITests/Pods-iOSChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF63EDFFF0C3EDB77359FA8 /* libPods-iOSChallengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSChallengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0967FB65D775EC890D1F58F /* Pods-iOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA2345527406728AA2D5DB /* Pods-iOSChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
-		FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0F54AD77D954DDD5BEBE4B /* Pods_iOSChallengeTests.framework in Frameworks */,
+				04865F59216C449300F11E44 /* Pods_iOSChallengeTests.framework in Frameworks */,
+				04865F57216C448D00F11E44 /* Pods_iOSChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D21DBE0FD856E4A6344231 /* Pods_iOSChallengeUITests.framework in Frameworks */,
+				909593ADDD74AFA87E622D59 /* libPods-iOSChallengeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,8 @@
 				FDDA2345527406728AA2D5DB /* Pods-iOSChallengeTests.release.xcconfig */,
 				A207E9C2220A9DF191B27DA4 /* Pods-iOSChallengeUITests.debug.xcconfig */,
 				9EF4079A87F0B65436F1C6B3 /* Pods-iOSChallengeUITests.release.xcconfig */,
+				9AEA990BCB3D6F622F7B2157 /* Pods-iOSChallenge-iOSChallengeTests.debug.xcconfig */,
+				831C441FC9B33734FFC711C3 /* Pods-iOSChallenge-iOSChallengeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -414,9 +424,13 @@
 		62060319E8E299E2FE0BAAFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */,
+				04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */,
+				04865F54216C444C00F11E44 /* Pods_iOSChallenge.framework */,
 				F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */,
 				1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */,
-				FF549D21C7A1E2514917393D /* Pods_iOSChallengeUITests.framework */,
+				707E90A587F8CF684923680D /* Pods_iOSChallenge_iOSChallengeTests.framework */,
+				CDF63EDFFF0C3EDB77359FA8 /* libPods-iOSChallengeUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -451,6 +465,7 @@
 				042B37A22165B09B00045DE3 /* Sources */,
 				042B37A32165B09B00045DE3 /* Frameworks */,
 				042B37A42165B09B00045DE3 /* Resources */,
+				EAF8B175322653A38ACA1A41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -640,6 +655,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF8B175322653A38ACA1A41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

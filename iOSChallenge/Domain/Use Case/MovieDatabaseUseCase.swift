@@ -16,6 +16,11 @@ class MovieDatabaseUseCase {
         controller.datasource = MovieDatabaseDataSource()
     }
     
+    init(databaseProtocol: MovieDatabaseDataSourceProtocol) {
+        controller = MovieListDatabaseRepository()
+        controller.datasource = databaseProtocol
+    }
+    
     func insertMovie(movie: [Movie]) {
         controller.insertMovie(movie: movie)
     }
