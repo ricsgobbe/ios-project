@@ -36,6 +36,7 @@ class MovieListPresenter: MovieListPresenterProtocol {
         view.startLoading()
         if isConnectedToInternet() {
             movieUseCases.fetchMovieList { [weak self] (response, error) in
+                self?.databaseUseCase.insertMovie(movie: response)
                 self?.displayingValues(movies: response, error: error)
             }
         } else {

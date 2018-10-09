@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Commom/LoadingView.swift"
-            timestampString = "560696834.447809"
+            timestampString = "560795872.6930521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "stopLoading()"
             landmarkType = "7">
          </BreakpointContent>

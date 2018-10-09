@@ -30,8 +30,8 @@ class MovieListTableViewCell: UITableViewCell, NibLoadable, Reusable {
     }
     
     func render(movie: Movie) {
-        let placeholder = UIImage(named: "placeholder")
-        moviePoster.loadImageFromURL(stringUrl: movie.posterUrl, placeholder: placeholder!, fadeInDuration: 0.2)
+        labelShadowSetup()
+        downloadImageSetup(stringUrl: movie.posterUrl)
         movieTitle.text = movie.title
         releaseDate.text = movie.releaseDate.convertDateFormater()
         var appendedGenres = ""
@@ -39,6 +39,22 @@ class MovieListTableViewCell: UITableViewCell, NibLoadable, Reusable {
             appendedGenres += " \(genre)"
         })
         genres.text = appendedGenres
+    }
+    
+    fileprivate func downloadImageSetup(stringUrl: String) {
+        let placeHolder = UIImage(named: "placeholder")
+        let width = self.contentView.frame.width
+        let height = MovieListTableViewCell.height
+        let requiredSize = CGSize(width: width, height: height)
+        moviePoster.loadImageFromUrlResized(with: stringUrl, placeholder: placeHolder!, fadeInDuration: 0.33, desiredSize: requiredSize)
+    }
+    
+    fileprivate func labelShadowSetup() {
+        movieTitle.layer.shadowColor = UIColor.black.cgColor
+        movieTitle.layer.shadowRadius = 3.0
+        movieTitle.layer.shadowOpacity = 1.0
+        movieTitle.layer.shadowOffset = CGSize(width: 4, height: 4)
+        movieTitle.layer.masksToBounds = false
     }
 
 }

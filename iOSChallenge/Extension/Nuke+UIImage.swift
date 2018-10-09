@@ -21,4 +21,15 @@ extension UIImageView {
     
     }
     
+    
+    func loadImageFromUrlResized(with stringUrl: String, placeholder: UIImage, fadeInDuration: TimeInterval, desiredSize: CGSize) {
+        let options = ImageLoadingOptions(
+            placeholder: placeholder,
+            transition: .fadeIn(duration: fadeInDuration))
+        let url = URL(string: stringUrl)!
+        let request = ImageRequest(url: url, targetSize: desiredSize, contentMode: .aspectFit)
+        Nuke.loadImage(with: request, options: options, into: self, progress: nil, completion: nil)
+        
+    }
+    
 }

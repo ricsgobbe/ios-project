@@ -20,6 +20,7 @@ protocol LoadingView {
 
 extension LoadingView where Self: UIViewController {
     func startLoading() {
+        loadingView.backgroundColor = UIColor.white
         if !view.subviews.contains(loadingView) {
             view.addSubview(loadingView)
         }
