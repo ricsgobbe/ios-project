@@ -40,7 +40,7 @@ extension MovieInfoTableViewCell {
        overview.text = movieDetail.overview
        var appendedGenres = ""
         movieDetail.genres.forEach { (genre) in
-            appendedGenres = genre + ""
+            appendedGenres += genre + " "
         }
         genre.text = appendedGenres
         releaseDate.text = String(describing: movieDetail.voteAverage)
