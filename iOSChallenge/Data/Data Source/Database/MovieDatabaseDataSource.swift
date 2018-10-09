@@ -43,6 +43,7 @@ class MovieDatabaseDataSource: MovieDatabaseDataSourceProtocol {
         if var movieFound = movieToUpdate.first {
             try! realm.write {
                 movieFound = movie
+                print(movieFound)
             }
             return true
         }
@@ -55,6 +56,7 @@ class MovieDatabaseDataSource: MovieDatabaseDataSourceProtocol {
         if var movieFound = movieToUpdate.first {
             try! realm.write {
                 movieFound = movie
+                print(movieFound)
             }
             return true
         } else {
