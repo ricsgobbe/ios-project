@@ -31,6 +31,7 @@ class MovieListView: UIViewController, StoryboardBased {
         super.viewDidLoad()
         initialSetup()
         pullToRefreshSetup()
+        searchSetup()
         // Do any additiona l setup after loading the view, typically from a nib.
     }
     
@@ -60,6 +61,13 @@ extension MovieListView {
         movieDetailTableView.estimatedRowHeight = MovieListTableViewCell.height
         movieDetailTableView.rowHeight = UITableViewAutomaticDimension
     }
+    
+    fileprivate func searchSetup() {
+        searchBarSetup()
+        navigationItem.searchController?.searchResultsUpdater = self
+        
+    }
+    
 }
 
 extension MovieListView: UITableViewDataSource, UITableViewDelegate {
@@ -125,6 +133,15 @@ extension MovieListView: MovieListViewProtocol {
     }
     
     
+}
+
+extension MovieListView: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchedMovie = searchController.searchBar.text else {
+            return
+        }
+        print("Searched Movie: " + searchedMovie)
+    }
 }
 
 extension MovieListView: CustomNavigationControllerStylable {

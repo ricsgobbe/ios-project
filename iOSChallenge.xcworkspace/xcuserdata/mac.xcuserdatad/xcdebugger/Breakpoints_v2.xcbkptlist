@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSChallenge/Domain/Use Case/MovieDatabaseUseCase.swift"
-            timestampString = "560747230.7541291"
+            timestampString = "560797883.8983279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -106,12 +106,12 @@
                   moduleName = "iOSChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Presentation/Movie%20Detail/Cell/MovieInfoTableViewCell.swift"
-                  timestampString = "560746893.472891"
+                  timestampString = "562463387.758134"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "793">
+                  offsetFromSymbolStart = "749">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -121,14 +121,30 @@
                   moduleName = "iOSChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mac/Development/iOSChallenge/iOSChallenge/Presentation/Movie%20Detail/Cell/MovieInfoTableViewCell.swift"
-                  timestampString = "560746893.4755501"
+                  timestampString = "562463387.76079"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
                   endingLineNumber = "43"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/Presentation/Movie Detail/View/MovieListView.swift"
+            timestampString = "562689404.032172"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "updateSearchResults(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

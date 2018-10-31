@@ -17,8 +17,9 @@ class CustomNavigationBar: UINavigationController {
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         super.pushViewController(viewController, animated: animated)
-        configureStyle(for: topViewController)
-    }
+        configureStyle(for: topViewController)    }
+    
+    
 }
 
 
@@ -40,5 +41,4 @@ extension CustomNavigationBar {
             setNeedsStatusBarAppearanceUpdate()
         }
     }
-
 }
