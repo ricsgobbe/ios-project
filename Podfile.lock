@@ -19,6 +19,12 @@ PODS:
     - Reusable/View (= 4.0.3)
   - Reusable/Storyboard (4.0.3)
   - Reusable/View (4.0.3)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
@@ -29,10 +35,12 @@ DEPENDENCIES:
   - Quick
   - RealmSwift
   - Reusable
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Moya
     - Nimble
@@ -43,6 +51,10 @@ SPEC REPOS:
     - Result
     - Reusable
     - SwiftyJSON
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -54,8 +66,11 @@ SPEC CHECKSUMS:
   RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Reusable: 12b67a60e1f3e8c523cc910795dab733f58fbc7e
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: f0737ac933fd8a1d8aaf77abb63ae372c404c82d
+PODFILE CHECKSUM: dec55bca60a42c4417e37e440e6b629e741a0c43
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3

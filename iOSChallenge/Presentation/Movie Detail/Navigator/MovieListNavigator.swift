@@ -10,9 +10,9 @@ import UIKit
 
 class MovieListNavigator {
     
-     var view: MovieListViewProtocol!
+     var view: MovieListViewDelegate!
     
-    init(_ view: MovieListViewProtocol) {
+    init(_ view: MovieListViewDelegate) {
        self.view = view
     }
     

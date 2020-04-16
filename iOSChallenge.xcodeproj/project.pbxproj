@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,10 +27,9 @@
 		042B37E72166F1B000045DE3 /* MovieListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37E62166F1B000045DE3 /* MovieListController.swift */; };
 		042B37E92166F1E500045DE3 /* MovieListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37E82166F1E500045DE3 /* MovieListRepository.swift */; };
 		042B37EB2166F34F00045DE3 /* MovieUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37EA2166F34F00045DE3 /* MovieUseCases.swift */; };
-		042B37EE2166F43100045DE3 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37ED2166F43100045DE3 /* MovieListPresenter.swift */; };
+		042B37EE2166F43100045DE3 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37ED2166F43100045DE3 /* MovieListViewModel.swift */; };
 		042B37F7216706E500045DE3 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37F5216706E500045DE3 /* MovieListTableViewCell.swift */; };
 		042B37F8216706E500045DE3 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042B37F6216706E500045DE3 /* MovieListTableViewCell.xib */; };
-		04865F57216C448D00F11E44 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */; };
 		04865F59216C449300F11E44 /* Pods_iOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */; };
 		04F1595621684ACD004F9737 /* MovieListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1595521684ACD004F9737 /* MovieListNavigator.swift */; };
 		04F1595821684C58004F9737 /* MovieDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1595721684C58004F9737 /* MovieDetailTableView.swift */; };
@@ -50,6 +49,7 @@
 		04F15978216AF1EA004F9737 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15977216AF1EA004F9737 /* CustomNavigationBar.swift */; };
 		528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */; };
 		909593ADDD74AFA87E622D59 /* libPods-iOSChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF63EDFFF0C3EDB77359FA8 /* libPods-iOSChallengeUITests.a */; };
+		A6D53FA354ED35343ABF1F9A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,11 +96,9 @@
 		042B37E62166F1B000045DE3 /* MovieListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListController.swift; sourceTree = "<group>"; };
 		042B37E82166F1E500045DE3 /* MovieListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRepository.swift; sourceTree = "<group>"; };
 		042B37EA2166F34F00045DE3 /* MovieUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUseCases.swift; sourceTree = "<group>"; };
-		042B37ED2166F43100045DE3 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		042B37ED2166F43100045DE3 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		042B37F5216706E500045DE3 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		042B37F6216706E500045DE3 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
-		04865F54216C444C00F11E44 /* Pods_iOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F1595521684ACD004F9737 /* MovieListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListNavigator.swift; sourceTree = "<group>"; };
 		04F1595721684C58004F9737 /* MovieDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailTableView.swift; sourceTree = "<group>"; };
@@ -138,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				528F51A7CAB69AF6C42F8F75 /* Pods_iOSChallenge.framework in Frameworks */,
+				A6D53FA354ED35343ABF1F9A /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04865F59216C449300F11E44 /* Pods_iOSChallengeTests.framework in Frameworks */,
-				04865F57216C448D00F11E44 /* Pods_iOSChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,18 +338,18 @@
 				04F1595421684AB9004F9737 /* Navigator */,
 				042B37F4216706C500045DE3 /* Cell */,
 				042B37F12166F65400045DE3 /* View */,
-				042B37F02166F64E00045DE3 /* Presenter */,
+				042B37F02166F64E00045DE3 /* ViewModel */,
 			);
 			path = "Movie Detail";
 			sourceTree = "<group>";
 		};
-		042B37F02166F64E00045DE3 /* Presenter */ = {
+		042B37F02166F64E00045DE3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				042B37ED2166F43100045DE3 /* MovieListPresenter.swift */,
+				042B37ED2166F43100045DE3 /* MovieListViewModel.swift */,
 				04F1596321685A90004F9737 /* MovieDetailPresenter.swift */,
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		042B37F12166F65400045DE3 /* View */ = {
@@ -425,8 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				04865F58216C449300F11E44 /* Pods_iOSChallengeTests.framework */,
-				04865F56216C448D00F11E44 /* Pods_iOSChallenge.framework */,
-				04865F54216C444C00F11E44 /* Pods_iOSChallenge.framework */,
 				F9F475B9CF782582E781AEB2 /* Pods_iOSChallenge.framework */,
 				1343CA27BC4CD12B72BB8FA5 /* Pods_iOSChallengeTests.framework */,
 				707E90A587F8CF684923680D /* Pods_iOSChallenge_iOSChallengeTests.framework */,
@@ -594,31 +590,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSChallenge/Pods-iOSChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9059B1481AAC33B958DA66CF /* [CP] Check Pods Manifest.lock */ = {
@@ -662,19 +643,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSChallengeTests/Pods-iOSChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -701,7 +679,7 @@
 				042B37F7216706E500045DE3 /* MovieListTableViewCell.swift in Sources */,
 				04F1596B216A76E1004F9737 /* MovieDatabaseUseCase.swift in Sources */,
 				04F1595D21685692004F9737 /* MovieInfoTableViewCell.swift in Sources */,
-				042B37EE2166F43100045DE3 /* MovieListPresenter.swift in Sources */,
+				042B37EE2166F43100045DE3 /* MovieListViewModel.swift in Sources */,
 				04F1596E216A90E8004F9737 /* NetworkManager.swift in Sources */,
 				042B37E92166F1E500045DE3 /* MovieListRepository.swift in Sources */,
 				042B37962165B09900045DE3 /* AppDelegate.swift in Sources */,

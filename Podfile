@@ -13,7 +13,8 @@ target 'iOSChallenge' do
   pod 'Reusable'
   pod 'Nuke'
   pod 'RealmSwift'
-
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
 
 end
