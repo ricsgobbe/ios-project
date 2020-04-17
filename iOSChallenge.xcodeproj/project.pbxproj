@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042B37962165B09900045DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37952165B09900045DE3 /* AppDelegate.swift */; };
-		042B37982165B09900045DE3 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37972165B09900045DE3 /* MovieListView.swift */; };
+		042B37982165B09900045DE3 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B37972165B09900045DE3 /* MovieListViewController.swift */; };
 		042B379B2165B09900045DE3 /* MovieListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B37992165B09900045DE3 /* MovieListView.storyboard */; };
 		042B379D2165B09B00045DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042B379C2165B09B00045DE3 /* Assets.xcassets */; };
 		042B37A02165B09B00045DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B379E2165B09B00045DE3 /* LaunchScreen.storyboard */; };
@@ -72,7 +72,7 @@
 /* Begin PBXFileReference section */
 		042B37922165B09900045DE3 /* iOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042B37952165B09900045DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		042B37972165B09900045DE3 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		042B37972165B09900045DE3 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		042B379A2165B09900045DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MovieListView.storyboard; sourceTree = "<group>"; };
 		042B379C2165B09B00045DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042B379F2165B09B00045DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -356,7 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				042B37992165B09900045DE3 /* MovieListView.storyboard */,
-				042B37972165B09900045DE3 /* MovieListView.swift */,
+				042B37972165B09900045DE3 /* MovieListViewController.swift */,
 				04F1595721684C58004F9737 /* MovieDetailTableView.swift */,
 				04F1595921684C6C004F9737 /* MovieDetailTableView.storyboard */,
 			);
@@ -667,7 +667,7 @@
 				04F1595621684ACD004F9737 /* MovieListNavigator.swift in Sources */,
 				042B37D22165BD5800045DE3 /* MovieRestDataSource.swift in Sources */,
 				04F15967216A6F37004F9737 /* MovieDatabaseDataSource.swift in Sources */,
-				042B37982165B09900045DE3 /* MovieListView.swift in Sources */,
+				042B37982165B09900045DE3 /* MovieListViewController.swift in Sources */,
 				04F1595821684C58004F9737 /* MovieDetailTableView.swift in Sources */,
 				04F15969216A756B004F9737 /* MovieListDatabaseRepository.swift in Sources */,
 				04F15970216AA687004F9737 /* LoadingView.swift in Sources */,

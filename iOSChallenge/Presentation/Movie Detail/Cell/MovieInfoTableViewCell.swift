@@ -31,6 +31,11 @@ extension MovieInfoTableViewCell {
         
         // Configure the view for the selected state
     }
+
+  override func didMoveToSuperview() {
+    super.didMoveToSuperview()
+    layoutIfNeeded()
+  }
 }
 
 extension MovieInfoTableViewCell {

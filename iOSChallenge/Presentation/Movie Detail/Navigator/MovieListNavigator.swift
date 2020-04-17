@@ -10,20 +10,20 @@ import UIKit
 
 class MovieListNavigator {
     
-     var view: MovieListViewDelegate!
-    
-    init(_ view: MovieListViewDelegate) {
-       self.view = view
-    }
-    
-    func goToMovieDetails(_ id: Int) {
-        if let viewController = view as? UIViewController {
-            let movieDetailVC = MovieDetailTableView.instantiate()
-            if let navigationController = viewController.navigationController {
-                navigationController.pushViewController(movieDetailVC, animated: true)
-                movieDetailVC.getMovieDetail(id: id)
-            }
-        }
-    }
+//     var view: MovieListViewDelegate!
+//    
+//    init(_ view: MovieListViewDelegate) {
+//       self.view = view
+//    }
+//    
+//    func goToMovieDetails(_ id: Int) {
+//        if let viewController = view as? UIViewController {
+//            let movieDetailVC = MovieDetailTableView.instantiate()
+//            if let navigationController = viewController.navigationController {
+//                navigationController.pushViewController(movieDetailVC, animated: true)
+//                movieDetailVC.getMovieDetail(id: id)
+//            }
+//        }
+//    }
     
 }

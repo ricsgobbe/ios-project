@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,32 +14,32 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ilb-Mi-xaW" id="mYb-uN-6qD">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="275.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-HD-JjZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="275.5"/>
+                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-HD-JjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="476"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="476" id="jwb-Bm-qK6"/>
+                        </constraints>
                     </imageView>
                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="biR-tk-o8d" userLabel="opacityView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="275.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="476"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czv-vM-LzW">
-                                <rect key="frame" x="15" y="180" width="245" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="5BZ-be-JjD"/>
-                                </constraints>
+                                <rect key="frame" x="15" y="298.5" width="245" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/01/1994" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBB-ZW-htq">
-                                <rect key="frame" x="15" y="159" width="83" height="21"/>
+                                <rect key="frame" x="15" y="277.5" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acao, Aventura, Comedia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKR-fs-gFl">
-                                <rect key="frame" x="0.0" y="250" width="315" height="20.5"/>
+                                <rect key="frame" x="0.0" y="361.5" width="315" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="uba-za-PUS"/>
                                 </constraints>
@@ -59,6 +57,7 @@
                             <constraint firstAttribute="trailing" secondItem="cKR-fs-gFl" secondAttribute="trailing" constant="5" id="esU-el-4wb"/>
                             <constraint firstItem="cKR-fs-gFl" firstAttribute="leading" secondItem="biR-tk-o8d" secondAttribute="leading" id="n0b-g4-gaN"/>
                             <constraint firstItem="Czv-vM-LzW" firstAttribute="leading" secondItem="biR-tk-o8d" secondAttribute="leading" constant="15" id="uSh-Q7-wuH"/>
+                            <constraint firstItem="GBB-ZW-htq" firstAttribute="centerY" secondItem="biR-tk-o8d" secondAttribute="centerY" constant="50" id="zUh-wx-42U"/>
                         </constraints>
                     </view>
                 </subviews>
